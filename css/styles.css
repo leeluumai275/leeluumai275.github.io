@@ -16,7 +16,8 @@ html {
     display: grid;
     grid-template-columns: 1fr 2fr;
     align-items: center;
-    border: 1px solid grey;
+    border: 2px solid grey;
+    background: rgb(247, 243, 243);
 }
 
 .image-cropper{
@@ -32,7 +33,6 @@ img {
 
 .CV_content {
     margin: 30px;
-    /* padding: 10px 100px; */
     justify-self: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
@@ -64,8 +64,10 @@ img {
     display: grid;
     grid-template-columns: 2fr 2fr;
     align-items: center;
+}
+
+h2 {
     font-weight: bold;
-    font-size: 25px;
     font-style: italic;
 }
 
@@ -81,10 +83,58 @@ img {
     justify-self: start;
 }
 
+.leadership {
+    text-align: center;
+    /* margin: 0 0 10px 0; */
+    padding: 0 0 10px;
+}
+
 .activities {
-    background: rgba(219, 12, 12, 0.87);
+    background: rgba(236, 27, 27, 0.87);
     color: white;
 }
+
+.activities_img {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+}
+
+.activities-photo-l {
+    border-radius: 60%;
+    width: 80%;
+    justify-self: left;
+    padding: 0 20px;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.activities-photo-r {
+    border-radius: 60%;
+    width: 80%;
+    justify-self: right;
+    padding: 0 20px;
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+
+
+
+/* .divider > section {
+    border-bottom: 1px dashed grey;
+    padding: 15px 0;
+}
+
+.divider > img:first-of-type {
+    border-bottom: 1px dashed grey;
+    padding-bottom: 15px;
+    padding-top: 0;
+}
+
+.divider > img:last-of-type {
+    border-bottom: none;
+} */
+
 
 /* LEADERSHIP ACTIVITIES
 .activities {
@@ -203,13 +253,13 @@ body {
     /* text-align: center; */
 }
 
-.direction-l > .flag-wrapper {
+/* .direction-l > .flag-wrapper {
     text-align: right;
 }
 
 .direction-r > .flag-wrapper {
     text-align: left;
-}
+} */
 
 .flag {
     position: relative;
@@ -221,7 +271,7 @@ body {
     font-weight: 600;
     text-align: left;
     color: rgba(219, 12, 12, 0.87);
-    font-weight: bold;
+    /* font-weight: bold; */
 }
   
 .direction-l .flag {
